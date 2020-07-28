@@ -1,0 +1,701 @@
+/* Base styles */
+
+.par {
+	margin: 0;
+	padding: 0;
+}
+
+.link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.page {
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #4c4c4c;
+}
+
+.h {
+	margin:0px;
+	padding:0px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Yeseva One', cursive;*/
+
+/*Promo style begin*/
+
+.promo {
+	background: url("../img/bg-promo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right; 
+
+}
+
+.header {
+	margin-bottom: 50px; 
+}
+
+
+.header-wrapper {
+	max-width:1200px;
+	margin: 0 auto; /*centering the header*/
+	padding:0 10px;
+}
+
+.logo {
+	float:left;
+}
+
+.img-logo {
+	max-width:100%;
+}
+
+.navigation {
+	float:right;
+	padding-top: 50px;
+}
+.menu {
+	display: none; /*hiding the element*/
+}
+
+.social {
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.social-item {
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.last {
+	margin-right: 0;
+}
+
+@media (min-width: 900px) {
+
+.menu {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+}
+.nav-bar {
+	display:inline-block;
+	vertical-align: top;
+	margin-right: 35px;
+}
+
+
+.menu-link {
+	font-family:'Lato',sans-serif;
+	font-size: 18px;
+	color:#ffffff;
+	font-weight: bold;
+}
+}
+
+.promo-content {
+	max-width: 950px;
+	margin: 0 auto; /*centering the header*/ /*Centering the whole block*/
+	text-align: center; /*centering the elements in the block*/
+	padding-bottom: 1px; 
+}
+
+.promo-title {
+	font-size: 40px;
+	font-family: 'Yeseva One', cursive, sans-serif;
+	margin-bottom: 20px;
+	color:#ffffff;
+	font-weight:normal; /*all <h> be default is bold. */
+}
+
+.promo-divider {
+	margin-bottom: 20px;
+}
+
+.promo-div-pic {
+	max-width: 100%;
+
+}
+
+.promo-button-wrapper {
+	margin-bottom: 60px;
+}
+
+.promo-button {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid white;
+	padding: 20px 45px;
+	font-size:18px;
+	color:#fff;
+	text-transform: uppercase;
+	background-color: rgba(255,255,255,0.3); 
+}
+
+.button-one {
+	margin-bottom: 30px;
+}
+
+.promo-button:hover {
+	background-color: rgba(0,0,0,0.4); /*this gives a transparent background*/
+	border: 1px solid black;
+}
+
+@media (min-width: 680px) {
+
+.header {
+	margin-bottom: 130px; 
+}
+
+.promo-title {
+	font-size: 70px;
+	margin-bottom: 40px;
+
+}
+
+.promo-divider {
+	margin-bottom: 30px;
+}
+
+.button-one {
+	margin-right: 30px;
+	margin-bottom: 0px;
+}
+
+.promo-button-wrapper {
+	margin-bottom: 130px;
+}
+
+	
+}
+
+/*Promo style end*/
+
+/*About Start*/
+
+.about {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; /*necessary if background is a large picture*/ 
+/*	NB! if bg is repeated --> no necessary to have all features of background (size and position)*/
+/*	color, background, font-size, font-family;*/
+}
+
+.about-wrapper {
+	max-width:1050px;
+	margin: 0 auto; /*centering the header*/
+	padding:0 10px;
+}
+
+.about-us {
+	display: block;
+}
+
+.about-title {
+	font-size: 30px;
+	color: #cc9900;
+	font-family: 'Yeseva One', cursive, sans-serif;
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.about-divider {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.about-div-pic {
+	max-width: 100%;
+}
+
+.about-content {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about-cook {
+	text-align: center;
+}
+
+.about-cook-pic {
+	max-width: 100%;
+}
+
+.about-picture {
+	display: none;
+
+}
+
+
+@media (min-width: 550px) {
+
+.about {
+	padding-bottom: 75px;
+	padding-top: 75px;
+	
+}
+
+.about-us {
+	display: inline-block;
+	vertical-align: top;
+	width:40.4761%; /*we give this to display left block in line with the right one. Since they have different content size*/ 
+	margin-right: 4.2857%;
+}
+
+.about-divider {
+	margin-bottom: 30px;
+}
+
+.about-content {
+	margin-bottom: 45px;
+}
+
+.about-picture {
+	display: inline-block;
+	vertical-align: top;
+	width:55.2381%; /*we give this to display left block in line with the right one. Since they have different content size*/ 
+}
+
+.about-dish-pic {
+	max-width: 100%; /*Don't forget to comment between in-line blocks*/
+}
+
+.about-title {
+	font-size: 36px;
+
+}
+
+}
+/*About End*/
+
+/*Reviews Start*/
+.reviews {
+	padding-bottom: 45px;
+	padding-top: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: url("../img/bg-reviews.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; /*necessary if background is a large picture*/ 
+/*	NB! if bg is repeated --> no necessary to have all features of background (size and position)*/
+/*	color, background, font-size, font-family;*/
+}
+
+.guest-reviews {
+	max-width: 755px;
+	margin: 0 auto; /*centering the header*/
+	padding: 25px 30px 45px 10px;
+	background-color: rgba(0,0,0,0.6); /*this gives a transparent background*/
+	color: #fff;
+	text-align: center;
+}
+
+.reviews-title {
+	font-size: 35px;
+	font-family: 'Yeseva One', cursive, sans-serif;
+	margin-bottom: 15px;
+}
+
+.review-divider {
+	margin-bottom: 10px;
+}
+
+.reviews-div-pic {
+	max-width: 100%;
+}
+
+.review-content {
+	margin-bottom: 20px;
+}
+
+.review-quote {
+	float: left;
+	margin-right: 2.649007%;
+	width: 4.238411%;
+}
+
+.quote-pic {
+	max-width: 100%;
+}
+
+.review-text {
+	font-size: 20px;
+	line-height: 30px;
+	float: left;
+	width: 92.715232%;
+}
+
+.review-footer-text {
+	font-size: 14px;
+}
+
+@media (min-width: 600px) {
+.reviews {
+	padding-bottom: 95px;
+	padding-top: 95px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.guest-reviews {
+	padding: 65px 70px 95px 25px;
+
+}
+
+.reviews-title {
+	font-size: 45px;
+}
+
+.review-divider {
+	margin-bottom: 30px;
+}
+
+.review-content {
+	margin-bottom: 50px;
+}
+
+.review-text {
+	font-size: 25px;
+	line-height: 45px;
+}
+
+.review-footer-text {
+	font-size: 16px;
+}
+
+}
+
+/*Reviews End*/
+
+/*Reservation Start*/
+
+.reservation {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; /*necessary if background is a large picture*/ 
+/*	NB! if bg is repeated --> no necessary to have all features of background (size and position)*/
+/*	color, background, font-size, font-family;*/
+}
+
+.guest-reservation {
+	max-width:1050px;
+	margin: 0 auto; /*centering the header*/
+	padding:0 10px;
+}
+
+.reservation-pic {
+	display: none;
+}
+
+.booking {
+	display: block;
+/*	width: 36.666667%;*/
+}
+
+.reservation-title {
+	font-size: 36px;
+	color:#cc9900;
+	font-family: 'Yeseva One', cursive, sans-serif;
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.reserve-divider {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.reservation-div {
+	max-width: 100%;
+}
+
+.reservation-text {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.information {
+
+}
+
+.guest-info {
+	margin-bottom: 30px;
+}
+
+.guest-element {
+	display: inline-block;
+	vertical-align: top;
+	width: 46.753247%;
+}
+
+.element-one {
+	margin-right: 6.493506%;
+}
+
+.label-element {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	color:#c9a131;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.info-input {
+	border: 1px solid #7c7c7c;
+	font-size: 16px;
+	color: #7c7c7c;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; /*because of the padding, the whole content goes beyond the centering parent. Give box-sizing*/
+	outline: none;
+	min-height: 46px; /*in case to match all height for all elements which are the same*/
+}
+
+.info-input:hover {
+	border: 1px solid #c9a131;
+}
+
+.reserve-button {
+	text-align: center;
+}
+
+.reserve-table {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #c9a131;
+	background-color: #c9a131;
+	color: #fff;
+	padding: 10px 60px;
+	font-size: 16px;
+}
+
+@media(min-width: 1070px) {
+
+.reservation {
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+.picture-one {
+	margin-right: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.reservation-pic {
+	width: 54.28714%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 9.047619%;
+}
+
+.reserve-pic {
+	display: inline-block;
+	vertical-align: top;
+	width: 47.368421%; /*(570px / 270 px *100) here 270 = (570 - 30) /2*/
+}
+
+.reservation-picture {
+	max-width: 100%;
+}
+
+.booking {
+	display: inline-block;
+	vertical-align: top;
+	width: 36.666667%;
+}
+
+.reservation-text {
+	margin-bottom: 50px;
+}
+
+}
+
+/*Reservation End*/
+
+/*Footer Start*/
+
+.page-footer {
+	background: #191919;
+	padding-top: 1px;
+	padding-bottom: 1px;
+/*	max-height: 100%;*/
+}
+
+.footer-wrapper {
+	max-width:1050px;
+	margin: 0 auto; /*centering the header*/
+	padding:0 10px;
+}
+
+.about-footer {
+	display: block;
+}
+
+.company {
+	font-size: 21px;
+	color: #fefefe;
+	font-family: 'Yeseva One', cursive, sans-serif;
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 60px; /*will not overlap with "parent" because of the padding 1px in .page-footer*/
+}
+
+.footer-divider {
+	text-align: center;
+}
+
+.footer-div-pic {
+	max-width: 100%;
+}
+
+.footer-text {
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.hours {
+	display: block;
+}
+
+.open-hours {
+	font-size: 21px;
+	color: #fefefe;
+	font-family: 'Yeseva One', cursive, sans-serif;
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.hours-text {
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+
+.payment-options {
+	text-align: center;
+}
+
+.payment-pic {
+	max-width: 100%;
+}
+
+.location {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.company-location {
+	font-size: 21px;
+	color: #fefefe;
+	font-family: 'Yeseva One', cursive, sans-serif;
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.location-address {
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media-pic {
+	max-width: 100%;
+}
+
+@media (min-width: 1070px) {
+
+.page-footer {
+	background: #191919;
+	height: 315px;
+}
+
+.footer-wrapper {
+	max-width:1050px;
+	margin: 0 auto; /*centering the header*/
+	padding:0 10px;
+}
+
+.about-footer {
+	display: inline-block;
+	vertical-align: top;
+	width: 360px;
+/*	margin-right: 10px;*/
+} 
+
+.hours {
+	display: inline-block;
+	vertical-align: top;
+	width: 360px;
+}
+
+.location {
+	display: inline-block;
+	vertical-align: top;
+	width: 330px;
+	margin-bottom: 0px;
+}
+}
+/*Footer End*/
+
+
+
+
